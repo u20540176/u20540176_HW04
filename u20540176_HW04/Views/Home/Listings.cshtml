@@ -1,0 +1,25 @@
+﻿@model List<u20540176_HW04.Models.Food>
+@{
+    ViewBag.Title = "Listings";
+}
+
+<h2>Listings</h2>
+
+<div class="jumbotron">
+    <h1>Listings</h1>
+</div>
+
+<div class="row">
+    <a class="btn btn-primary pull-right" href="@Url.Action("UploadFood","Home")">Add Food Listing</a>
+</div>
+@foreach (var listing in Model)
+{
+<div class="row">
+    <h6>@listing.Name</h6>
+    <h6>@listing.DisplayFoodGroupType()</h6>
+    <h6>@listing.Description</h6>
+    <h6>@listing.PickUpLocation</h6>
+    <h6>@listing.getSellDate()</h6>
+
+</div>
+}

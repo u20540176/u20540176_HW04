@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "UploadFood";
+}
+
+<h2>Add Listing</h2>
+@using (Html.BeginForm("UploadFood", "Home", FormMethod.Post))
+{
+    //Field for Name
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name">
+    </div>
+    //Field for Foodgroup
+    <div class="form-group">
+        <label for="foodGroup">Choose FoodGroup</label>
+        <select class="form-control" id="foodGroup" name="type">
+            <option value="1">Protein</option>
+            <option value="2">Carbs</option>
+            <option value="3">Vegetables</option>
+            <option value="4">Fruit</option>
+            <option value="5">Dairy</option>
+        </select>
+    </div>
+    //field for description
+    <div class="form-group">
+        <label for="desc">Description</label>
+        <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+    </div>
+    //field for sellby date
+    <div class="form-group">
+        <label for="sellBy">Sell By Date</label>
+        <input type="date" class="form-control" id="sellBy" name="sellBy">
+    </div>
+
+    //field for pickup location
+    <div class="form-group">
+        <label for="pickup">Pick-up Location</label>
+        <input type="text" class="form-control" id="pickup" name="pickup">
+    </div>
+    //field group for meatType - broad categories, can be further elaborated on
+    <div class="form-group protein">
+        <label for="meatType">Choose Type of Protein</label>
+        <select class="form-control" id="meatType" name="meatType">
+            <option value="Red Meat">Red Meat</option>
+            <option value="Poultry">Poultry</option>
+            <option value="Seafood">Seafood</option>
+
+        </select>
+    </div>
+    //field group for carbType
+    <div class="form-group carbs">
+        <label for="carbType">Choose Type of Carbohydrate</label>
+        <select class="form-control" id="carbType" name="carbType">
+            <option value="Sugar">Sugar</option>
+            <option value="Starches">Starches</option>
+            <option value="Fiber">Fiber</option>
+
+        </select>
+    </div>
+    //field group for vegType
+    <div class="form-group veg">
+        <label for="vegType">Choose Type of Vegetable</label>
+        <select class="form-control" id="vegType" name="vegType">
+            <option value="Leafy Vegetable">Leafy Vegetable</option>
+            <option value="Stem Vegetable">Stem Vegetable</option>
+            <option value="Seed Vegetable">Seed Vegetable</option>
+            <option value="Root Vegetable">Root Vegetable</option>
+            <option value="Fruit Vegetable">Fruit Vegetable</option>
+            <option value="Other">Other</option>
+
+        </select>
+    </div>
+    //field group for fruitType
+    <div class="form-group fruit">
+        <label for="fruitType">Choose Type of Fruit</label>
+        <select class="form-control" id="fruitType" name="fruitType">
+            <option value="Berry">Berry</option>
+            <option value="Citrus">Citrus</option>
+            <option value="Pits">Pits</option>
+            <option value="Cores">Cores</option>
+            <option value="Melon">Melon</option>
+            <option value="Tropical">Tropical</option>
+        </select>
+    </div>
+    //field group for dairyType
+    <div class="form-group dairy">
+        <label for="dairyType">Choose Type of Dairy</label>
+        <select class="form-control" id="dairyType" name="dairyType">
+            <option value="Milk">Milk</option>
+            <option value="Cheese">Cheese</option>
+            <option value="Yogurt">Yogurt</option>
+            <option value="Ice Cream">Ice Cream</option>
+            <option value="Butter">Butter</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    @section Scripts {
+
+        <script type="text/javascript" src="@Url.Content("~/Scripts/Upload.js/Upload.js")" asp-append-version="true"></script>
+
+    }
+
+}
+
+
