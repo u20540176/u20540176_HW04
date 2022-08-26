@@ -134,13 +134,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Images\INF272 HW04 Class diagram.jpg" />
-    <Content Include="App_Data\Images\INF272 Narrative 1.jpg" />
+    <Content Include="App_Data\Images\Narrative1.jpg" />
     <Content Include="App_Data\Images\INF272 Narrative 2.jpg" />
     <Content Include="App_Data\Images\INF272 Narrative 3.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Classdiagram.jpg" />
+    <Content Include="Content\Narrative2.jpg" />
+    <Content Include="Content\Narrative3.jpg" />
+    <Content Include="Content\Narrative1.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

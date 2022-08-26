@@ -1,7 +1,17 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+<style>
+    #Narratives {
+        border: solid 2px black;
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    #classDiagram {
+        border: solid 2px black;
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+</style>
 <div class="jumbotron">
     <h1>Homework 04</h1>
     <p class="lead">u20540176 - DG de Leeuw</p>
@@ -10,21 +20,21 @@
 <h4>Goal 2: Zero Hunger</h4>
 <h2>Narratives</h2>
 <br/>
-<div class="row">
-    <div class="col-md-4">
-        <img src="~/App_Data/Images/INF272 Narrative 1.jpg" alt="Narrative 1" />
+<div class="row" id="#Narratives" >
+    <div class="col-lg-12">
+        <img src=@Url.Content("~/Content/Narrative1.jpg" ) />
     </div>
-    <div class="col-md-4">
-        <img src="~/App_Data/Images/INF272 Narrative 2.jpg" alt="Narrative 2" />
+    <div class="col-lg-12">
+        <img src=@Url.Content("~/Content/Narrative2.jpg")  />
     </div>
-    <div class="col-md-4">
-        <img src="~/App_Data/Images/INF272 Narrative 3.jpg" alt="Narrative 3" />
+    <div class="col-lg-12">
+        <img src=@Url.Content("~/Content/Narrative3.jpg")  />
     </div>
     <br />
     <h2>Class Diagram</h2>
     <br />
-    <div class="col-md-4">
-        <img src="~/App_Data/Images/INF272 HW04 Class diagram.jpg" alt="Class Diagram"  />
+    <div class="col-lg-12" id="#classDiagram">
+        <img src=@Url.Content("~/Content/Classdiagram.jpg") />
     </div>
 
 
